@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.crystalloid</groupId>
+    <artifactId>preparation</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
+    <name>preparation</name>
+    <description>Preparation to Crystalloid interview</description>
+
+    <parent>
+        <groupId>com.google.cloud.samples</groupId>
+        <artifactId>shared-configuration</artifactId>
+        <version>1.2.0</version>
+    </parent>
+
+    <properties>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <endpoints.framework.version>2.2.2</endpoints.framework.version>
+        <endpoints.management.version>1.0.4</endpoints.management.version>
+        <endpoints.project.id>crystalloids-preparation</endpoints.project.id>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.26</version>
+        </dependency>
+        <!-- Compile/runtime dependencies -->
+        <dependency>
+            <groupId>com.google.endpoints</groupId>
+            <artifactId>endpoints-framework</artifactId>
+            <version>${endpoints.framework.version}</version>
+        </dependency>
+        <!-- [START guice_dependency] -->
+        <dependency>
+            <groupId>com.google.endpoints</groupId>
+            <artifactId>endpoints-framework-guice</artifactId>
+            <version>2.2.2</version>
+        </dependency>
+        <!-- [END guice_dependency] -->
+        <dependency>
+            <groupId>com.google.endpoints</groupId>
+            <artifactId>endpoints-management-control-appengine-all</artifactId>
+            <version>1.0.14</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.appengine</groupId>
+            <artifactId>appengine-api-1.0-sdk</artifactId>
+            <version>2.0.5</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <type>jar</type>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.objectify</groupId>
+            <artifactId>objectify</artifactId>
+            <version>6.0.6</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <!-- for hot reload of the web application-->
+        <outputDirectory>${project.build.directory}/${project.build.finalName}/WEB-INF/classes</outputDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.2</version>
+                <configuration>
+                    <webResources>
+                        <resources>
+                            <directory>${basedir}/src/main/webapp/WEB-INF</directory>
+                            <filtering>true</filtering>
+                            <targetPath>WEB-INF</targetPath>
+                        </resources>
+                    </webResources>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>appengine-maven-plugin</artifactId>
+                <version>2.4.4</version>
+                <configuration>
+                    <!-- deploy configuration -->
+                    <projectId>${endpoints.project.id}</projectId>
+                    <version>1</version>
+                    <devserver.port>8080</devserver.port>
+                    <port>8080</port>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>endpoints-framework-maven-plugin</artifactId>
+                <version>2.1.0</version>
+                <configuration>
+                    <!-- plugin configuration -->
+                    <hostname>${endpoints.project.id}.appspot.com</hostname>
+
+                    <serviceClasses>
+                        <serviceClass>com.crystalloid.preparation.api.GreetingController</serviceClass>
+                        <serviceClass>com.crystalloid.preparation.api.UserController</serviceClass>
+                    </serviceClasses>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "crystalloids-preparation",
+  "private_key_id": "9595b87ed4c279d11cb28c1f66dbb605be050dc7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDFN60p205TqmAh\nQCmaNCC0E8NVefaPVX433+Ij7K8XbOUo+0a2mVdlu+dH4Uh9FlL/3awMuR80wH37\nrYHN2KhU870oGR+6axQEjmYLgesFVXwSOCHwhuxq65XpnYpVvVGORPA6R0rO0r+S\nVUxb4T/tbnQ7kwQ9788Nyr4OY14AIjl8Tf4pgr/Qkv0qKCsxxoXu5q3ox04WmofL\nw/tQfshUNKN8cFbNtDNnuYGDp4DuAnJpT2Cru1+wSzKOmUtm/+/dbybu1tAhbbtW\nddHIIQFouffVOhz8pBtliJ5oJqVs1xSpWIzsokt89XwiexbVIY867bFjIzDWBXJT\ny3MYgPzHAgMBAAECggEAA9qbuRIyJEKAFKvT98ZtAVqnFHXs/aF1uA+39rpdgkOB\n/HsIaNAJyg5Jn8nMG/klGY5nO4e4198PSUkA+3/wYHBETz9rqFmiz2CBWdKnE7Lp\nWRX4xee7sAqCLeV9MKYAXzdcchUEqOB0C9agRq4n1SI7FroTMLYj2o/Akiz5XXUu\nqJYf7RaslnFivw1ZC5O1vcXy9Xj0qRVk3L5CAAVKTWD1dqLdMrkb+EbCWAMmWLdv\nx5lPVoxey5Qvfz4LWafy5d9XwACM98p2+PjeO5Z1DsmIwQiMpW1rxxlfQWtWyjxd\ndZMqtElnqnhS77mp8HmErYVceqEL+YIUh7TxN9sfAQKBgQD7uNEPNvveXvucJeeM\nKb6iUKgFvCwmT6Ctg3kB3AmDlM+tY8t+o3dv2bL9mj/HazmFiYSTibm+VmeLqlsC\nloiyLkIFNrcIUOV2QxAVdp1k9j30FoCxJ8c4VPWLcRn0E8VuTVHPTV+yIGRtt9Rc\nQFVCYJZzQkK6VRsJVZWaYX0z/wKBgQDIkblAEb8SRaNO/bKyPqH5/NRFzeRbyxWo\nNm0nr+gmdNW5EAbOkNm9cAAU6dYvJKuxsMhNXqhmv+p5/Kb2ESmAuiGCWrBO1o43\n37Nq6jtzoRI3Ts195VhEDksp+hOsVww31xqR3ApBrX+i/KSobJ2FboNo9ZGwdydK\nh8n2sguXOQKBgQDX7bAYFxhzppK7XaCEkYKgBgQ79zEAJCo27aKtv6zBnLORjxuO\npHbeEacC+IBhdk8/h7mcPfaBmej028t6KttTzW6AvnC/x3Uuv1RatQdLBhga+/qk\n/PReFDMVzI1w3Ezt05Gr/DlsuXCs1ZZrFByO9f/ZGyvWXw70MOBGL/6QzQKBgDYR\napIF9q8zTKHnrDt2vO2KJaMnrM6+AXmWKnjPZ9KuHktEMcGPtNLnlW4N12pgBVTi\nZizNPrJsPAZkgJHG8Jw+EPh2AB9QoYgYauKAgERcgG+ec7DjmZbHD6YiPxlvYeDP\nwN7fJXitD8JdPvoURaaJsy0hPgQHKvVhg6VYO92pAoGAa1Xnob27oWH0pIu/p2Xi\nxpXWZfxbrZDL2jhzyhu8vDlbfGrnMFjVIfT5NURxsiVD4IiUPQRframOQUB0SX8h\nRPLUW/SDzQnaSOS/LyzmBa/pkWPmIySLOumc3CS+U5/UCw7Mnpt/eCA/QjHzjeNH\nu3VHdadkwFOhUfTZsgR8zK4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "spring-firestore@crystalloids-preparation.iam.gserviceaccount.com",
+  "client_id": "116361165972530232746",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/spring-firestore%40crystalloids-preparation.iam.gserviceaccount.com"
+}
